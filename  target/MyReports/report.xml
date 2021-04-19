@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.371">
+<testcase classname="Amazon Search" name="Search Apple Macbook on Amazon" time="0.094">
+<system-out><![CDATA[Given User is on Amazon login page..........................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User click on Login button..............................................passed
+Then User navigates to homepage.............................................passed
+Given I have a search field on Amazon home page.............................passed
+When I search with keyword "Apple Macbook Pro"..............................passed
+Then Product with name "Apple Macbook Pro" should be displayed..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Search Apple iPhone 12 on Amazon" time="0.008">
+<system-out><![CDATA[Given User is on Amazon login page..........................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User click on Login button..............................................passed
+Then User navigates to homepage.............................................passed
+Given I have a search field on Amazon home page.............................passed
+When I search with keyword "Apple iPhone 12"................................passed
+Then Product with name "Apple iPhone 12" should be displayed................passed
+]]></system-out>
+</testcase>
+</testsuite>

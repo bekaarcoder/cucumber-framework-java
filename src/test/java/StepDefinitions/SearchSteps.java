@@ -1,14 +1,40 @@
 package StepDefinitions;
 
+import org.junit.Assert;
+
 import ProjectImplementation.Product;
 import ProjectImplementation.Search;
 import io.cucumber.java.en.*;
-import junit.framework.Assert;
 
 public class SearchSteps {
 	
 	Product product;
 	Search search;
+	
+	@Given("User is on Amazon login page")
+	public void user_is_on_amazon_login_page() {
+	    System.out.println("User is on Login page.");
+	}
+
+	@When("User enters username")
+	public void user_enters_username() {
+	    System.out.println("User enters username");
+	}
+
+	@When("User enters password")
+	public void user_enters_password() {
+	    System.out.println("User enters password");
+	}
+
+	@When("User click on Login button")
+	public void user_click_on_login_button() {
+	    System.out.println("User clicks login button");
+	}
+
+	@Then("User navigates to homepage")
+	public void user_navigates_to_homepage() {
+	    System.out.println("User navigates to amazon homepage");
+	}
 
 	@Given("I have a search field on Amazon home page")
 	public void i_have_a_search_field_on_amazon_home_page() {

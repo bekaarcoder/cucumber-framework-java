@@ -7,9 +7,14 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-			features = {"src/test/resources/AppFeatures"},
-			glue = {"StepDefinitions"},
-			plugin = {"pretty"}
+			features = {"src/test/resources/AppFeatures/Search.feature"},
+			glue = {"StepDefinitions", "AppHooks"},
+			plugin = {
+					"pretty",
+					"json: target/MyReports/report.json",
+					"junit: target/MyReports/report.xml"
+				},
+			monochrome = true
 		)
 public class SearchTest {
 
